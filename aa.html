@@ -1,0 +1,21 @@
+<script>
+var x=5;
+var y1=0;
+var y2=1;
+main(x)
+function main(x)
+{
+while(x>0)
+{
+fn1(y1,y2);
+--x;
+}
+document.writeln(y1+","+y2);
+}
+function fn1(a,b)
+{
+var y3=y2;
+y2=y1+y2;
+y1=y3;
+}
+</script>
